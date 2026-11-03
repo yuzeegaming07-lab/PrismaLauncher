@@ -13,11 +13,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Extract Prisma Launcher source ZIP
-        run: |
-          mkdir -p /tmp/prisma-source
-          unzip -q PrismaLauncher-LAUNCH-READY.zip -d /tmp/prisma-source
-          cp -R /tmp/prisma-source/PrismaLauncher/. .
+      - name: Ekstrak proyek
+  run: |
+    mkdir -p /tmp/prisma
+    unzip -q PrismaLauncher-LAUNCH-READY.zip -d /tmp/prisma
+    cp -R /tmp/prisma/PrismaLauncher/. .
 
       - name: Set up Java 17
         uses: actions/setup-java@v4
