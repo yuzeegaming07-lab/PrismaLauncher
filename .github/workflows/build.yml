@@ -3,7 +3,7 @@ name: Build Prisma Launcher APK
 on:
   workflow_dispatch:
   push:
-    branches: [utama]
+    branches: [main]
 
 jobs:
   build:
