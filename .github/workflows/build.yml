@@ -16,8 +16,6 @@ jobs:
           mkdir /tmp/prisma
           unzip -q *.zip -d /tmp/prisma
           cp -R /tmp/prisma/PrismaLauncher/. .
-
-      - uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: '17'
